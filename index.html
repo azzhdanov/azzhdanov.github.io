@@ -3,8 +3,8 @@
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Artem Zhdanov — Senior software engineer</title>
-  <meta name="description" content="Artem Zhdanov: software engineer with five years of production experience, moving into research. Looking for a research internship in Grenoble, January to May 2027.">
+  <title>Artem Zhdanov — Software engineer moving into computational science</title>
+  <meta name="description" content="Artem Zhdanov: software engineer with five years of production experience, moving into computational science. M1 research project on GPU kernel fusion for ocean models at LJK, Grenoble (January to June 2027). Looking for a summer research internship starting 14 June 2027.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g' cx='.4' cy='.4'%3E%3Cstop offset='0' stop-color='%23FFB42A'/%3E%3Cstop offset='.5' stop-color='%23E8233F'/%3E%3Cstop offset='1' stop-color='%237A55D8'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23g)'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -178,7 +178,7 @@
   .story-head{display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:clamp(36px,5vw,64px); flex-wrap:wrap}
   .tl{list-style:none; padding:0; position:relative}
   .tl > li{display:grid; grid-template-columns:170px 1fr; position:relative}
-  .tl .yr{font-family:var(--serif); font-weight:700; font-variation-settings:"opsz" 72; font-size:22px; padding:6px 24px 44px 0; text-align:right; letter-spacing:-.01em}
+  .tl .yr{font-family:var(--serif); font-weight:700; font-variation-settings:"opsz" 72; font-size:20px; line-height:1.2; padding:6px 24px 44px 0; text-align:right; letter-spacing:-.01em}
   .tl .body{border-left:1px solid var(--ink); padding:0 0 44px 32px; position:relative; max-width:720px}
   .tl .body::before{content:""; position:absolute; left:-6px; top:15px; width:11px; height:11px; border-radius:50%; background:var(--paper); border:1px solid var(--ink)}
   .tl > li:first-child .body::before{background:var(--red); border-color:var(--red)}
@@ -237,6 +237,8 @@
   .status{align-self:flex-start; font:600 12.5px/1 var(--sans); padding:6px 10px; border-radius:999px; border:1px solid var(--ink)}
   .status[data-s="progress"]{background:var(--yellow); border-color:var(--yellow)}
   .status[data-s="shipped"]{background:var(--ink); color:var(--paper)}
+  .status[data-s="planned"]{background:var(--cold); border-color:var(--cold)}
+  .tl-sup{font-size:14px; color:var(--ink); margin-top:2px}
   .card h3{font-family:var(--serif); font-weight:750; font-variation-settings:"opsz" 96; font-size:28px; line-height:1.05; letter-spacing:-.025em}
   .tags{display:flex; flex-wrap:wrap; gap:6px; list-style:none; padding:0}
   .tags li{font-size:13px; padding:4px 10px; border-radius:999px; background:var(--cell); border:1px solid var(--rule)}
@@ -380,7 +382,7 @@
           <div class="badge" aria-hidden="true">
             <svg viewBox="0 0 120 120">
               <defs><path id="circ" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
-              <text><textPath href="#circ">OPEN TO WORK ✺ DISPONIBLE ✺ </textPath></text>
+              <text><textPath href="#circ">OPEN TO RESEARCH ✺ SUMMER 2027 ✺ </textPath></text>
             </svg>
             <div class="core"></div>
           </div>
@@ -508,7 +510,7 @@
     links: {
       email:    "a.zzhdanov@gmail.com",
       github:   "https://github.com/azzhdanov",
-      linkedin: "https://www.linkedin.com/in/zhdanovf/",
+      linkedin: "https://www.linkedin.com/in/zhdanovartem/",
       instagram:"",                                        // leave "" to hide
       resumeEn: "Artem_Zhdanov_CV_EN.pdf",
       resumeFr: "Artem_Zhdanov_CV_FR.pdf"
@@ -518,54 +520,54 @@
 
     ui: {
       en: {
-        title: "Artem Zhdanov — Senior software engineer",
+        title: "Artem Zhdanov — Software engineer moving into computational science",
         nav_about:"About", nav_story:"Experience", nav_projects:"Projects", nav_contact:"Contact", nav_resume:"Resume",
         hero_hi:"Hello, I'm ",
-        hero_line:"Software engineer moving into research. Five years building enterprise systems in production, now looking for hands-on research experience.",
-        hero_sub:"Exchange year at Université Grenoble Alpes (MoSIG). Seeking a research internship, January to May 2027. Open to summer research, June to August.",
+        hero_line:"Software engineer moving into computational science. Five years building production systems; next, making ocean simulations faster on GPUs.",
+        hero_sub:"Exchange year at Université Grenoble Alpes (M1, MoSIG), with an M1 research project at LJK from January to June 2027. Looking for a summer research internship starting 14 June 2027.",
         cta_contact:"Get in touch", cta_resume:"Download resume",
         portrait_ph:"",
         about_title:"about me.",
-        about_lead:"Five years in enterprise development. Now I'm moving into research and development.",
+        about_lead:"Five years in enterprise development. Now I'm moving into computational science.",
         about_p1:"For four and a half years at Purolator, one of Canada's largest logistics companies, I shipped ERP integrations, carbon accounting infrastructure and production AI agents. Rebuilding one integration surfaced $3M in missed revenue. That work taught me to build systems that hold up in production; now I want to apply it to open research questions.",
-        about_p2:"I'm now in Grenoble on a research exchange at Université Grenoble Alpes, taking master's courses in AI and cloud computing while finishing my computer science degree at TMU. What I'm missing is hands-on research experience, and that's what I'm looking for next. I speak English, French and Russian.",
+        about_p2:"I'm in Grenoble for an exchange year at Université Grenoble Alpes, taking M1 courses in the MoSIG programme while finishing my BSc in Computer Science at TMU (expected December 2027). From January to June 2027 I'm doing my M1 research project at the Laboratoire Jean Kuntzmann under Prof. Martin Schreiber, on GPU kernel fusion for the CROCO ocean model. After my defence in June, I'm looking for a summer research internship starting 14 June 2027, in GPU and HPC computing, machine learning for science, or energy systems. I speak English, French and Russian.",
         film_title:"Off the clock, on film.", film_note:"Shot on an Olympus Pen EE-3.",
         story_title:"experience.",
         kit_title:"toolkit.",
         edu_title:"education.", cert_title:"certifications.",
         proj_word:"projects", proj_title:"projects.",
-        st_progress:"In development", st_shipped:"In production", st_concept:"Concept",
+        st_progress:"In development", st_shipped:"In production", st_concept:"Concept", st_planned:"Starting January 2027",
         resume_title:"resume.",
-        resume_note:"Two pages, updated September 2026.",
+        resume_note:"Two pages, updated November 2026.",
         resume_en:"English (PDF)", resume_fr:"Français (PDF)",
         contact_title:"let's talk.",
-        contact_text:"Looking for a research internship (January to May 2027), and open to a summer research collaboration (June to August 2027).",
+        contact_text:"Looking for a summer research internship starting 14 June 2027, in GPU and HPC computing, machine learning for science, or energy systems.",
         contact_where:"Based in Grenoble, France",
         foot_made:"Made in Grenoble, France", foot_top:"Back to top"
       },
       fr: {
-        title: "Artem Zhdanov — Ingénieur logiciel senior",
+        title: "Artem Zhdanov — Ingénieur logiciel en transition vers le calcul scientifique",
         nav_about:"À propos", nav_story:"Expérience", nav_projects:"Projets", nav_contact:"Contact", nav_resume:"CV",
         hero_hi:"Bonjour, moi c'est",
-        hero_line:"Ingénieur logiciel en transition vers la recherche. Cinq ans de systèmes d'entreprise en production, aujourd'hui en quête d'une vraie expérience de recherche.",
-        hero_sub:"Année d'échange à l'Université Grenoble Alpes (MoSIG). Je cherche un stage de recherche de janvier à mai 2027, et reste ouvert à une collaboration l'été (juin à août).",
+        hero_line:"Ingénieur logiciel en transition vers le calcul scientifique. Cinq ans de systèmes en production ; prochaine étape : accélérer les simulations océaniques sur GPU.",
+        hero_sub:"Année d'échange à l'Université Grenoble Alpes (M1 MoSIG), avec un projet de recherche de M1 au LJK de janvier à juin 2027. Je cherche un stage de recherche d'été à partir du 14 juin 2027.",
         cta_contact:"Me contacter", cta_resume:"Télécharger le CV",
         portrait_ph:"",
         about_title:"à propos.",
-        about_lead:"Cinq ans de développement en entreprise. Aujourd'hui, je me tourne vers la recherche et le développement.",
+        about_lead:"Cinq ans de développement en entreprise. Aujourd'hui, je me tourne vers le calcul scientifique.",
         about_p1:"Pendant quatre ans et demi chez Purolator, l'un des plus grands logisticiens du Canada, j'ai livré des intégrations ERP, une infrastructure de comptabilité carbone et des agents IA en production. La refonte d'une intégration a permis d'identifier 3 M$ CA de revenus non facturés. Ce travail m'a appris à construire des systèmes fiables en production ; je veux maintenant mettre cette expérience au service de questions de recherche ouvertes.",
-        about_p2:"Je suis maintenant à Grenoble pour une année d'échange universitaire à l'Université Grenoble Alpes, où je suis des cours de master (M1) en IA et en cloud computing tout en terminant mon bachelor en informatique (Bac+4) à TMU. Ce qui me manque aujourd'hui, c'est une vraie expérience de recherche, et c'est ce que je cherche. Je parle anglais, français et russe.",
+        about_p2:"Je suis à Grenoble pour une année d'échange à l'Université Grenoble Alpes, où je suis des cours de M1 du master MoSIG tout en terminant mon bachelor en informatique (Bac+4) à TMU (diplomation prévue en décembre 2027). De janvier à juin 2027, je réalise mon projet de recherche de M1 au Laboratoire Jean Kuntzmann, sous la direction du Pr Martin Schreiber, sur la fusion de noyaux GPU pour le modèle océanique CROCO. Après ma soutenance en juin, je cherche un stage de recherche d'été à partir du 14 juin 2027, en calcul GPU et HPC, en apprentissage automatique pour la science ou en systèmes énergétiques. Je parle anglais, français et russe.",
         film_title:"Hors du bureau, en argentique.", film_note:"Pris à l'Olympus Pen EE-3.",
         story_title:"expérience.",
         kit_title:"compétences.",
         edu_title:"formation.", cert_title:"certifications.",
         proj_word:"projets", proj_title:"projets.",
-        st_progress:"En développement", st_shipped:"En production", st_concept:"Concept",
+        st_progress:"En développement", st_shipped:"En production", st_concept:"Concept", st_planned:"Démarre en janvier 2027",
         resume_title:"cv.",
-        resume_note:"Deux pages, mis à jour en septembre 2026.",
+        resume_note:"Deux pages, mis à jour en novembre 2026.",
         resume_en:"English (PDF)", resume_fr:"Français (PDF)",
         contact_title:"écrivez-moi.",
-        contact_text:"Je cherche un stage de recherche (janvier à mai 2027) et reste ouvert à une collaboration de recherche l'été (juin à août 2027).",
+        contact_text:"Je cherche un stage de recherche d'été à partir du 14 juin 2027, en calcul GPU et HPC, en apprentissage automatique pour la science ou en systèmes énergétiques.",
         contact_where:"Basé à Grenoble, France",
         foot_made:"Fait à Grenoble, France", foot_top:"Haut de page"
       }
@@ -579,10 +581,10 @@
     ],
 
     focus: [
-      { title:{ en:"Applied ML and research", fr:"ML appliqué et recherche" }, text:{ en:"Forecasting, RAG and data pipelines on real-world data.", fr:"Prévision, RAG et pipelines de données sur des données réelles." } },
-      { title:{ en:"Enterprise integrations", fr:"Intégrations d'entreprise" }, text:{ en:"ERP, SAP S/4HANA, REST and SOAP at national scale.", fr:"ERP, SAP S/4HANA, REST et SOAP à l'échelle nationale." } },
-      { title:{ en:"Carbon accounting", fr:"Comptabilité carbone" }, text:{ en:"GHG Scopes 1 to 3 and ESG reporting.", fr:"GES, scopes 1 à 3 et reporting ESG." } },
-      { title:{ en:"Full-stack and cloud", fr:"Full-stack et cloud" }, text:{ en:"React, FastAPI, AWS and CI/CD.", fr:"React, FastAPI, AWS et CI/CD." } }
+      { title:{ en:"GPU and HPC computing", fr:"Calcul GPU et HPC" }, text:{ en:"M1 research project (2027): kernel fusion and CUDA Fortran code generation for ocean models.", fr:"Projet de recherche de M1 (2027) : fusion de noyaux et génération de code CUDA Fortran pour les modèles océaniques." } },
+      { title:{ en:"Applied ML and LLMs", fr:"ML appliqué et LLM" }, text:{ en:"Forecasting, RAG, AI agents and data pipelines on real-world data.", fr:"Prévision, RAG, agents IA et pipelines de données sur des données réelles." } },
+      { title:{ en:"Carbon and energy data", fr:"Données carbone et énergie" }, text:{ en:"GHG Scopes 1 to 3, ESG reporting and energy systems data.", fr:"GES scopes 1 à 3, reporting ESG et données énergétiques." } },
+      { title:{ en:"Production engineering", fr:"Ingénierie en production" }, text:{ en:"ERP integrations, AWS and CI/CD at national scale, zero incidents.", fr:"Intégrations ERP, AWS et CI/CD à l'échelle nationale, sans incident." } }
     ],
 
     photos: [
@@ -594,15 +596,29 @@
 
     timeline: [
       { year:{ en:"Next", fr:"Ensuite" },
-        logo:"logos/grenoble.png",
-        title:{ en:"Research internship, January to May 2027", fr:"Stage de recherche, de janvier à mai 2027" },
-        org:{ en:"Grenoble, France", fr:"Grenoble, France" },
+        mono:"2027",
+        title:{ en:"Summer research internship, starting 14 June 2027", fr:"Stage de recherche d'été, à partir du 14 juin 2027" },
+        org:{ en:"Open to research labs in Germany and across Europe", fr:"Ouvert aux laboratoires de recherche en Allemagne et en Europe" },
         highlights:[
-          { en:"Full-time research project with a lab or R&D team in Grenoble.", fr:"Projet de recherche à temps plein, au sein d'un laboratoire ou d'une équipe R&D grenobloise." },
-          { en:"Also open to a summer research collaboration, June to August 2027.", fr:"Également ouvert à une collaboration de recherche l'été, de juin à août 2027." }
+          { en:"Available full-time and on site from 14 June 2027, the week after my M1 defence.", fr:"Disponible à temps plein et sur place dès le 14 juin 2027, la semaine suivant ma soutenance de M1." },
+          { en:"Interests: GPU and HPC computing, machine learning for science, and AI for energy systems.", fr:"Thèmes : calcul GPU et HPC, apprentissage automatique pour la science, IA pour les systèmes énergétiques." },
+          { en:"Still an undergraduate: BSc in Computer Science at TMU, expected December 2027.", fr:"Toujours étudiant en bachelor : BSc en informatique à TMU, diplomation prévue en décembre 2027." }
         ]
       },
-      { year:"2022–2026", logo:"logos/purolator.jpg", mono:"P",
+      { year:{ en:"Jan – June 2027", fr:"janv. – juin 2027" }, logo:"logos/ljk.png", mono:"LJK",
+        title:{ en:"M1 Research Project: Complex Kernel Fusion on GPUs for Ocean Models", fr:"Projet de recherche de M1 : fusion complexe de noyaux sur GPU pour les modèles océaniques" },
+        org:{ en:"Laboratoire Jean Kuntzmann (LJK), Université Grenoble Alpes, Grenoble, France", fr:"Laboratoire Jean Kuntzmann (LJK), Université Grenoble Alpes, Grenoble, France" },
+        sup:{ en:"Supervisor: Prof. Martin Schreiber", fr:"Encadrant : Pr Martin Schreiber" },
+        highlights:[
+          { en:"Context: Poseidon lifts the Fortran code of the CROCO ocean model into a higher-level representation and applies flopping kernel fusion (FKF, fusion by recomputation), reaching up to 2.16× over hand-optimized code on an H100.", fr:"Contexte : Poseidon remonte le code Fortran du modèle océanique CROCO vers une représentation de plus haut niveau et applique la fusion de noyaux par recalcul (FKF), jusqu'à 2,16× plus rapide que le code optimisé à la main sur H100." },
+          { en:"Research question: is complex kernel fusion (CKF: shared-memory scratchpad and barrier) competitive with FKF, and in which regimes (stencil depth, register pressure, problem size)?", fr:"Question de recherche : la fusion complexe de noyaux (CKF : mémoire partagée et barrière) est-elle compétitive face à la FKF, et dans quels cas (profondeur du stencil, pression sur les registres, taille du problème) ?" },
+          { en:"Hypothesis: CKF and FKF win in different regimes, so mixing them can reach optima beyond FKF alone.", fr:"Hypothèse : CKF et FKF l'emportent dans des cas différents ; les combiner peut atteindre des optima au-delà de la FKF seule." },
+          { en:"Planned work: CUDA Fortran code generation in PSyclone, automatic stencil-extent extraction to size halos and thread blocks, and CKF vs FKF benchmarks on NVIDIA H100/A100 GPUs (Grid'5000).", fr:"Travail prévu : génération de code CUDA Fortran dans PSyclone, extraction automatique des stencils pour dimensionner halos et blocs de threads, puis comparaison CKF/FKF sur GPU NVIDIA H100/A100 (Grid'5000)." },
+          { en:"Part-time from late January, full-time May to June 2027. Intermediate report in April; final paper and defence 8–11 June 2027.", fr:"Temps partiel dès fin janvier, temps plein de mai à juin 2027. Rapport intermédiaire en avril ; article final et soutenance du 8 au 11 juin 2027." }
+        ],
+        tags:["CUDA Fortran","PSyclone","Fortran","GPU","Kernel fusion","Stencil computations","HPC"] },
+
+      { year:{ en:"Feb 2022 – Aug 2026", fr:"févr. 2022 – août 2026" }, logo:"logos/purolator.jpg", mono:"P",
         title:{ en:"Technology Developer", fr:"Ingénieur logiciel (Technology Developer)" },
         org:{ en:"Purolator Inc., Mississauga, Canada", fr:"Purolator Inc., Mississauga, Canada" },
         highlights:[
@@ -614,7 +630,7 @@
         ],
         tags:["Salesforce","Apex","Java","Python","AWS","SAP S/4HANA"] },
 
-      { year:"2021", logo:"logos/nc-research-innovation.jpg", mono:"R&I",
+      { year:{ en:"Mar 2021 – Dec 2021", fr:"mars 2021 – déc. 2021" }, logo:"logos/nc-research-innovation.jpg", mono:"R&I",
         title:{ en:"Computer Programmer, Research Assistant", fr:"Développeur, assistant de recherche" },
         org:{ en:"Niagara College Research & Innovation, Welland, Canada", fr:"Niagara College Research & Innovation, Welland, Canada" },
         highlights:[
@@ -629,6 +645,7 @@
       { label:{ en:"Programming languages", fr:"Langages de programmation" }, items:{ en:"Python, Java, C, C++, C#, JavaScript, SQL, Apex, Bash", fr:"Python, Java, C, C++, C#, JavaScript, SQL, Apex, Bash" } },
       { label:{ en:"Machine learning and data", fr:"Machine learning et données" }, items:{ en:"PyTorch, scikit-learn, NumPy, pandas, LLM applications, RAG, prompt engineering, data pipelines, ETL", fr:"PyTorch, scikit-learn, NumPy, pandas, applications LLM, RAG, prompt engineering, pipelines de données, ETL" } },
       { label:{ en:"Scientific computing", fr:"Calcul scientifique" }, items:{ en:"Numerical methods, linear algebra, parallel and concurrent programming, OS internals, Linux/Unix, image processing", fr:"Méthodes numériques, algèbre linéaire, programmation parallèle et concurrente, systèmes d'exploitation, Linux/Unix, traitement d'images" } },
+      { label:{ en:"HPC and GPU (M1 project, 2027)", fr:"HPC et GPU (projet de M1, 2027)" }, items:{ en:"CUDA Fortran, Fortran, PSyclone, OpenACC and OpenMP offloading, kernel fusion, stencil computations, GPU profiling (occupancy, shared memory, registers), Grid'5000", fr:"CUDA Fortran, Fortran, PSyclone, déport OpenACC et OpenMP, fusion de noyaux, calculs de stencils, profilage GPU (occupation, mémoire partagée, registres), Grid'5000" } },
       { label:{ en:"Backend and integration", fr:"Backend et intégration" }, items:{ en:"REST and SOAP APIs, FastAPI, Node.js, ASP.NET Core, microservices, SAP S/4HANA, message-driven architectures", fr:"API REST et SOAP, FastAPI, Node.js, ASP.NET Core, microservices, SAP S/4HANA, architectures orientées messages" } },
       { label:{ en:"Frontend", fr:"Frontend" }, items:{ en:"React, Angular, TypeScript, HTML, CSS, Bootstrap, Lightning Web Components", fr:"React, Angular, TypeScript, HTML, CSS, Bootstrap, Lightning Web Components" } },
       { label:{ en:"Cloud and DevOps", fr:"Cloud et DevOps" }, items:{ en:"AWS, Azure, Salesforce Platform, Git, GitHub, GitLab, CI/CD, GitOps, release management, Agile", fr:"AWS, Azure, plateforme Salesforce, Git, GitHub, GitLab, CI/CD, GitOps, gestion des mises en production, Agile" } },
@@ -640,15 +657,17 @@
     education: [
       { logo:"logos/uga.jpg", mono:"UGA",
         title:{ en:"Exchange year, graduate coursework in Informatics (MoSIG)", fr:"Année d'échange universitaire, Master Informatique (M1) MoSIG" },
-        where:{ en:"Université Grenoble Alpes, Grenoble", fr:"Université Grenoble Alpes, Grenoble" }, year:"2026–27",
-        notes:[ { en:"Visual computing, artificial intelligence, programming languages and compiler design.", fr:"Informatique visuelle, intelligence artificielle, langages de programmation et compilation." } ] },
+        where:{ en:"Université Grenoble Alpes, Grenoble", fr:"Université Grenoble Alpes, Grenoble" }, year:{ en:"Sept 2026 – June 2027", fr:"sept. 2026 – juin 2027" },
+        notes:[ { en:"M1 research project at LJK, January to June 2027: GPU kernel fusion for the CROCO ocean model.", fr:"Projet de recherche de M1 au LJK, de janvier à juin 2027 : fusion de noyaux GPU pour le modèle océanique CROCO." },
+                { en:"Visual computing, artificial intelligence, programming languages and compiler design.", fr:"Informatique visuelle, intelligence artificielle, langages de programmation et compilation." } ] },
       { logo:"logos/tmu.jpg", mono:"TMU",
         title:{ en:"Bachelor of Science (Honours), Computer Science", fr:"Bachelor of Science (Honours) (Équivalent Bac+4) en informatique" },
-        where:{ en:"Toronto Metropolitan University, Toronto", fr:"Toronto Metropolitan University, Toronto" }, year:"2025–27",
-        notes:[ { en:"Dean's List 2025, Faculty of Science.", fr:"Tableau d'honneur du doyen (Dean's List) 2025, Faculté des sciences." } ] },
+        where:{ en:"Toronto Metropolitan University, Toronto", fr:"Toronto Metropolitan University, Toronto" }, year:{ en:"Jan 2025 – Dec 2027", fr:"janv. 2025 – déc. 2027" },
+        notes:[ { en:"Expected graduation: December 2027.", fr:"Diplomation prévue : décembre 2027." },
+                { en:"Cumulative GPA 4.07/4.33. Dean's List 2025, Faculty of Science.", fr:"Moyenne cumulative 4,07/4,33. Tableau d'honneur du doyen (Dean's List) 2025, Faculté des sciences." } ] },
       { logo:"logos/niagara-college.jpg", mono:"NC",
         title:{ en:"Advanced Diploma, Computer Programming and Analysis (Co-op)", fr:"Diplôme d'études collégiales technique (Équivalent Bac+3) en programmation et analyse informatique" },
-        where:{ en:"Niagara College, Welland", fr:"Niagara College, Welland" }, year:"2019–21",
+        where:{ en:"Niagara College, Welland", fr:"Niagara College, Welland" }, year:{ en:"Sept 2019 – Dec 2021", fr:"sept. 2019 – déc. 2021" },
         notes:[ { en:"President's Honour Roll for five terms.", fr:"Tableau d'honneur du président pendant cinq semestres." },
                 { en:"Keith Segal International Student Scholarship (2021).", fr:"Bourse Keith Segal pour étudiants internationaux (2021)." } ] }
     ],
@@ -660,6 +679,13 @@
 
     // status: "progress" | "shipped" | "concept". image "" = generated heat map.
     projects: [
+      { status:"planned", seed:7, tint:"#9EC5EC", image:"",
+        title:{ en:"Complex kernel fusion for ocean models on GPUs", fr:"Fusion complexe de noyaux GPU pour les modèles océaniques" },
+        where:{ en:"M1 research project · LJK, Université Grenoble Alpes · Supervisor: Prof. Martin Schreiber", fr:"Projet de recherche de M1 · LJK, Université Grenoble Alpes · Encadrant : Pr Martin Schreiber" },
+        text:{ en:"Testing whether shared-memory kernel fusion can beat or complement the recomputation-based fusion used by Poseidon, a source-to-source compiler for the CROCO ocean model.", fr:"Déterminer si la fusion de noyaux en mémoire partagée peut battre ou compléter la fusion par recalcul de Poseidon, un compilateur source à source pour le modèle océanique CROCO." },
+        detail:{ en:"Goal: faster, more energy-efficient ocean simulation on GPUs. January to June 2027, defence 8–11 June 2027.", fr:"Objectif : des simulations océaniques plus rapides et plus sobres en énergie sur GPU. De janvier à juin 2027, soutenance du 8 au 11 juin 2027." },
+        tags:["CUDA Fortran","PSyclone","GPU","HPC"],
+        links:[ { url:"https://www.martin-schreiber.info/data/publications/2026_remy_et_al_poseidon.pdf", label:{ en:"Poseidon preprint", fr:"Préprint Poseidon" } } ] },
       { status:"shipped", seed:21, tint:"#7A55D8", image:"",
         title:{ en:"Net Zero Cloud carbon accounting", fr:"Comptabilité carbone Net Zero Cloud" },
         where:{ en:"Purolator", fr:"Purolator" },
@@ -741,9 +767,9 @@
       `<figure class="frame-photo" style="background:linear-gradient(150deg,${tones[i%4]})">${p.src ? `<img src="${esc(p.src)}" alt="${esc(t(p.caption))}" loading="lazy">` : ""}<figcaption>${esc(t(p.caption))}</figcaption></figure>`).join("");
 
     document.getElementById("timeline").innerHTML = CONTENT.timeline.map(i => `
-      <li><span class="yr">${esc(t(i.year))}</span>
+      <li><span class="yr">${esc(t(i.year)).split(" – ").join(" –<br>")}</span>
         <div class="body">
-          <div class="tl-head">${logo(i)}<div><h3>${esc(t(i.title))}</h3><p class="small">${esc(t(i.org))}</p></div></div>
+          <div class="tl-head">${logo(i)}<div><h3>${esc(t(i.title))}</h3><p class="small">${esc(t(i.org))}</p>${i.sup ? `<p class="tl-sup">${esc(t(i.sup))}</p>` : ""}</div></div>
           ${i.highlights ? `<ul class="hl">${i.highlights.map(h => `<li>${esc(t(h))}</li>`).join("")}</ul>` : ""}
           ${i.tags ? `<ul class="tags">${i.tags.map(g => `<li>${esc(g)}</li>`).join("")}</ul>` : ""}
         </div></li>`).join("");
@@ -751,7 +777,7 @@
     document.getElementById("kit").innerHTML = CONTENT.toolkit.map(k =>
       `<li><h3>${esc(t(k.label))}</h3><p>${esc(t(k.items))}</p></li>`).join("");
 
-    const listItem = i => `<li class="${i.logo || i.mono ? "wl" : ""}">${logo(i)}<h3>${esc(t(i.title))}</h3><span class="yr">${esc(i.year)}</span><p class="small">${esc(t(i.where))}</p>${i.notes ? `<ul class="notes">${i.notes.map(n => `<li>${esc(t(n))}</li>`).join("")}</ul>` : ""}</li>`;
+    const listItem = i => `<li class="${i.logo || i.mono ? "wl" : ""}">${logo(i)}<h3>${esc(t(i.title))}</h3><span class="yr">${esc(t(i.year))}</span><p class="small">${esc(t(i.where))}</p>${i.notes ? `<ul class="notes">${i.notes.map(n => `<li>${esc(t(n))}</li>`).join("")}</ul>` : ""}</li>`;
     document.getElementById("edu").innerHTML = CONTENT.education.map(listItem).join("");
     document.getElementById("certs").innerHTML = CONTENT.certifications.map(listItem).join("");
 
