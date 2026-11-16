@@ -608,8 +608,8 @@
       { year:{ en:"Jan – June 2027", fr:"janv. – juin 2027" }, logo:"logos/ljk.png", mono:"LJK",
         title:{ en:"M1 Research Project: Complex Kernel Fusion on GPUs for Ocean Models", fr:"Projet de recherche de M1 : fusion complexe de noyaux sur GPU pour les modèles océaniques" },
         org:{ en:"Laboratoire Jean Kuntzmann (LJK), Université Grenoble Alpes, Grenoble, France", fr:"Laboratoire Jean Kuntzmann (LJK), Université Grenoble Alpes, Grenoble, France" },
-        sup:{ en:"Supervisor: Prof. Martin Schreiber", fr:"Encadrant : Pr Martin Schreiber" },
         highlights:[
+          { en:"Supervisor: Prof. Martin Schreiber", fr:"Encadrant : Pr Martin Schreiber" },
           { en:"Context: Poseidon lifts the Fortran code of the CROCO ocean model into a higher-level representation and applies flopping kernel fusion (FKF, fusion by recomputation), reaching up to 2.16× over hand-optimized code on an H100.", fr:"Contexte : Poseidon remonte le code Fortran du modèle océanique CROCO vers une représentation de plus haut niveau et applique la fusion de noyaux par recalcul (FKF), jusqu'à 2,16× plus rapide que le code optimisé à la main sur H100." },
           { en:"Research question: is complex kernel fusion (CKF: shared-memory scratchpad and barrier) competitive with FKF, and in which regimes (stencil depth, register pressure, problem size)?", fr:"Question de recherche : la fusion complexe de noyaux (CKF : mémoire partagée et barrière) est-elle compétitive face à la FKF, et dans quels cas (profondeur du stencil, pression sur les registres, taille du problème) ?" },
           { en:"Hypothesis: CKF and FKF win in different regimes, so mixing them can reach optima beyond FKF alone.", fr:"Hypothèse : CKF et FKF l'emportent dans des cas différents ; les combiner peut atteindre des optima au-delà de la FKF seule." },
